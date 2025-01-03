@@ -1,0 +1,37 @@
+:root{
+    --background: #D8e3fa;
+    --gray:#EAEAEC;
+    --Primary: #29283F;
+    --Primary-Violet: #7370F4;
+}
+body{
+    background-image: url(../img/fundo/pngegg\ \(15\).png);
+}
+*{
+    margin: auto;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:18px;
+    line-height: 28px;
+    
+}
+p{
+    text-align: justify;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: auto; 
+    background-color: var(--gray);
+    opacity: 85%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s;
+    max-width: clanp(14rem, 64vn, 40.25rem);
+    min-width: 20rem;
+    min-height: 17.5rem;
+
+    padding: 1cm;
+    margin: 1in;
+}

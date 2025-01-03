@@ -1,0 +1,229 @@
+:root{
+    --background: rgb(181, 192, 236);
+    --cardfondo: #f0efef;
+    --gray:#A9A9A9;
+    --Primary: #8A2BE2;
+    --Primary-Violet: #7370F4;
+    --invisivel: #ADFF2F;
+    --paragrafo: #0b0101;
+    --contorno: #e1e6e9 ;
+    
+}
+*{
+    
+    line-height: 25px;
+    color: var(--paragrafo);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    
+}
+body{
+    background-image: url(../img/fundo/pngegg\ \(15\).png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    place-items: end center;
+    height: 100vh; 
+    margin: 0;
+    padding: 2.5rem;
+}
+a{
+    text-decoration: none;
+}
+p {
+    text-align: justify;
+    color: var(--paragrafo);
+}
+p > strong {
+    text-align: justify;
+    color: var(--paragrafo);
+}
+.pDireita{
+    text-align: right;
+}
+h1 {
+    text-shadow:
+        0 0 15px rgba(79, 216, 15, 0.5),
+        0 0 30px rgba(208, 244, 5, 0.3),
+        0 0 50px rgba(236, 246, 40, 0.2);
+        font-size: 22px;
+}
+.iconoVnzla{
+    margin-left: 1.5in;
+}
+.perfilEu{  
+    width: auto;
+    height: auto;
+    border-radius: 0;
+    /*border: 0.2rem solid var(--contorno);
+    filter:drop-shadow(0px, 0px, 12px grey);
+    opacity: 100%;*/
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 12.5rem; 
+    background-color: var(--gray);
+
+    opacity: 90%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s;
+    max-width: clanp(14rem, 64vn, 40.25rem);
+    min-width: 20rem;
+    min-height: 17.5rem;
+}
+.card01{
+    background-color: var(--gray);
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2rem; 
+    padding: 0.5in;
+    opacity: 90%;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s;
+    max-width: clanp(14rem, 64vn, 40.25rem);
+    min-width: 20rem;
+    min-height: 17.5rem;
+}
+.card:hover{
+    box-shadow: rgba(0, 0  , 0, 35)
+    0px, 5px, 15;
+}
+.background{
+    flex: 1 1 10rem;
+}
+.background img{
+    margin: 2rem;
+    width: 90%;
+    height: 60%;
+    object-fit: cover;
+}
+.icono01{
+    display:contents;
+    float:inline-start;
+    padding: 1in;
+    
+}
+.logos img{
+    width: 5%;
+    height: 3%;
+    aspect-ratio: 3/2;
+}
+.navRedes{
+    margin: 2rem;
+    margin-left: 1rem;
+    position: relative;
+    
+    background-color: var(--cardfondo);
+}
+.content{
+    flex: 3 1 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    
+    /*background-image: url(../img/png/pngegg\ \(26\).png);*/
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 30%;
+}
+.content > h2 {
+    font-size: clamp(
+        1.3rem, 2.5vw, 1.8rem
+    );
+    font-weight: 700;
+    margin-bottom: clamp(
+        0.35rem, 2vw,
+        00.55rem
+    );
+}
+.content > p{
+    font-size: clamp(
+        1rem, 1.75vw,
+        1.1rem
+    );
+    font-weight: 400;
+    margin: 0.4rem 0;
+}
+
+.content a{
+    color: var(--paragrafo);
+}
+.chips {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0.75rem 0px 1rem 0px;
+}
+.chip{
+    border-radius: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.9395rem;
+    background-color: var(--gray);
+    transition: all 0.3s;
+    font-weight: 500;
+    font-style:oblique;
+}
+.chip:hover{
+    background: var(--Primary-Violet);
+    color: var(--background);
+}
+.action-buttons{
+    border-top: 1px solid var(--gray);
+    padding-top: 1rem;
+    gap: 0.75rem;
+    display: flex;
+    margin-top: auto;
+    flex-wrap: wrap;
+
+}
+.action-buttons a{
+    background-color: var(--Primary);
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-radius: 0.75rem;
+    outline: none;
+    border: none;
+    /*font-size: 0.125rem;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    flex: 1 0 15rem;
+    max-width: 100%;
+}
+.action-buttons a:hover{
+    
+    text-decoration: underline;
+}
+.action-buttons a.secondary {
+    background-color: inherit;
+    color: var(--primary);
+    border: 1px solid var(
+        --primary);
+    flex: 1 0 5rem;
+}
+.fondo{
+    background-color: var(--gray);
+    opacity: 90%;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: justify;
+    line-height: 28px;
+   
+}
+.textRed{
+    color: red;
+}
+/*Icono redes sociales*/
+.wrapper .ico:hover span{
+    color: #fff;
+}
+.wrapper .ico:hover span,
+.wrapper .ico:hover .tooltip{
+    text-shadow: 0px -1px 0px rgba(0, 0  , 0, 0.4);
+}
